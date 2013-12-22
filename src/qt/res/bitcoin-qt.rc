@@ -1,14 +1,14 @@
-IDI_ICON1 ICON DISCARDABLE "icons/primecoin.ico"
-IDI_ICON2 ICON DISCARDABLE "icons/primecoin-testnet.ico"
+IDI_ICON1 ICON DISCARDABLE "icons/magnetoken.ico"
+IDI_ICON2 ICON DISCARDABLE "icons/magnetoken-testnet.ico"
 
 #include <windows.h>             // needed for VERSIONINFO
 #include "../../clientversion.h" // holds the needed client version information
 
-#define VER_PRODUCTVERSION     PRIMECOIN_VERSION_MAJOR,PRIMECOIN_VERSION_MINOR,PRIMECOIN_VERSION_REVISION,PRIMECOIN_VERSION_BUILD
-#define VER_PRODUCTVERSION_STR STRINGIZE(PRIMECOIN_VERSION_MAJOR) "." STRINGIZE(PRIMECOIN_VERSION_MINOR) "." STRINGIZE(PRIMECOIN_VERSION_REVISION) "." STRINGIZE(PRIMECOIN_VERSION_BUILD)
+#define VER_PRODUCTVERSION     MAGNETOKEN_VERSION_MAJOR,MAGNETOKEN_VERSION_MINOR,MAGNETOKEN_VERSION_REVISION,MAGNETOKEN_VERSION_BUILD
+#define VER_PRODUCTVERSION_STR STRINGIZE(MAGNETOKEN_VERSION_MAJOR) "." STRINGIZE(MAGNETOKEN_VERSION_MINOR) "." STRINGIZE(MAGNETOKEN_VERSION_REVISION) "." STRINGIZE(MAGNETOKEN_VERSION_BUILD)
 #define VER_FILEVERSION        VER_PRODUCTVERSION
 #define VER_FILEVERSION_STR    VER_PRODUCTVERSION_STR
-#define COPYRIGHT_STR          "2013-" STRINGIZE(COPYRIGHT_YEAR) " The Primecoin developers"
+#define COPYRIGHT_STR          "2013-" STRINGIZE(COPYRIGHT_YEAR) " The Magnetoken developers"
 
 VS_VERSION_INFO VERSIONINFO
 FILEVERSION     VER_FILEVERSION
@@ -20,14 +20,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Primecoin"
-            VALUE "FileDescription",    "Primecoin-Qt (OSS GUI client for Primecoin)"
+            VALUE "CompanyName",        "Magnetoken"
+            VALUE "FileDescription",    "Magnetoken-Qt (OSS GUI client for Magnetoken)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "primecoin-qt"
+            VALUE "InternalName",       "magnetoken-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under conditional MIT/X11 software license, see the accompanying file COPYING."
-            VALUE "OriginalFilename",   "primecoin-qt.exe"
-            VALUE "ProductName",        "Primecoin-Qt"
+            VALUE "OriginalFilename",   "magnetoken-qt.exe"
+            VALUE "ProductName",        "Magnetoken-Qt"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END
